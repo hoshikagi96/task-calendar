@@ -1,0 +1,34 @@
+$yellow: #d3a408;
+$dark-yellow: #b3973d96;
+
+.editor-container {
+    z-index: 10;
+    transition: 0.2s ease-in-out;
+    position: fixed;
+    right: 8px;
+    top: 8px;
+    background-color: $yellow;
+    text-align: center;
+    &.close {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        border-radius: 50%;
+        color: white;
+        font-size: 22px;
+        font-weight: bold;
+        box-shadow: rgba(lightgray, 0.3) 0px 4px 7px 2px;
+        &:hover {
+            cursor: pointer;
+            background-color: lighten($yellow, 10%);
+            top: 6px;
+            box-shadow: rgba(lightgray, 0.3) 0px 4px 7px 4px;
+        }
+    }
+    &.open {
+        width: calc(100% - 16px);
+        height: 500px;
+        border-radius: 8px;
+        background-color: lightgray;
+    }
+}

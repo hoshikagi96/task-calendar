@@ -1,0 +1,8 @@
+<div class="editor-container" [ngClass]="isOpen ? 'open' : 'close'">
+    <div *ngIf="!isOpen" (click)="isOpen=true">
+        ＋
+    </div>
+    <div *ngIf="isOpen" (click)="isOpen=false">
+        Opened
+    </div>
+</div>
